@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AtimiScanner</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:      #0f1e22;
+      --surface: #1a2e33;
+      --text:    #f0f9fa;
+      --dim:     #94a3b8;
+      --accent:  #4ade80;
+      --teal:    #3d8a9c;
+    }
+    body {
+      background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 40px 24px; line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      max-width: 480px; width: 100%; text-align: center;
+    }
+    .icon {
+      width: 96px; height: 96px; border-radius: 22px;
+      background: linear-gradient(145deg, #3d8a9c, #1e4a56);
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(47,107,122,.45);
+    }
+    .icon svg { width: 52px; height: 52px; }
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -.3px; margin-bottom: 8px; }
+    .tagline { font-size: 16px; color: var(--dim); margin-bottom: 32px; }
+    .pills {
+      display: flex; flex-wrap: wrap; gap: 8px;
+      justify-content: center; margin-bottom: 40px;
+    }
+    .pill {
+      font-size: 13px; padding: 5px 12px; border-radius: 20px;
+      background: var(--surface); color: var(--dim);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .pill.green { color: var(--accent); border-color: rgba(74,222,128,.25); background: rgba(74,222,128,.06); }
+    .links { display: flex; flex-direction: column; gap: 12px; }
+    a.btn {
+      display: block; padding: 14px 24px; border-radius: 12px;
+      font-size: 15px; font-weight: 600; text-decoration: none;
+      transition: opacity .15s;
+    }
+    a.btn:hover { opacity: .85; }
+    a.btn-primary { background: var(--teal); color: #fff; }
+    a.btn-ghost {
+      background: var(--surface); color: var(--dim);
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    footer {
+      margin-top: 48px; font-size: 13px; color: var(--dim);
+    }
+    footer a { color: var(--dim); }
+    footer a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">
+    <!-- Simplified viewfinder icon -->
+    <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Document -->
+      <rect x="14" y="9" width="24" height="34" rx="3" fill="rgba(255,255,255,0.92)"/>
+      <!-- Lines on doc -->
+      <rect x="18" y="16" width="16" height="2" rx="1" fill="rgba(0,0,0,0.18)"/>
+      <rect x="18" y="21" width="16" height="2" rx="1" fill="rgba(0,0,0,0.18)"/>
+      <rect x="18" y="26" width="11" height="2" rx="1" fill="rgba(0,0,0,0.18)"/>
+      <!-- Viewfinder corners — electric blue -->
+      <path d="M8 18 L8 8 L18 8"  stroke="#38BFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M34 8 L44 8 L44 18" stroke="#38BFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M8 34 L8 44 L18 44" stroke="#38BFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M34 44 L44 44 L44 34" stroke="#38BFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1>AtimiScanner</h1>
+  <p class="tagline">Document &amp; QR scanner for iPhone.<br>Nothing leaves your device.</p>
+
+  <div class="pills">
+    <span class="pill green">Zero network</span>
+    <span class="pill green">No accounts</span>
+    <span class="pill green">No tracking</span>
+    <span class="pill">Camera only</span>
+    <span class="pill">PDF export</span>
+    <span class="pill">QR &amp; barcodes</span>
+  </div>
+
+  <div class="links">
+    <a class="btn btn-primary" href="https://apps.apple.com/app/atimiscanner/id000000000">
+      Download on the App Store
+    </a>
+    <a class="btn btn-ghost" href="/atimiscanner/privacy-policy">Privacy Policy</a>
+    <a class="btn btn-ghost" href="https://github.com/grifjef/atimiscanner/issues">Support &amp; Feedback</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Jeff Griffith &nbsp;·&nbsp;
+       <a href="/atimiscanner/privacy-policy">Privacy Policy</a>
+    </p>
+  </footer>
+</div>
+</body>
+</html>

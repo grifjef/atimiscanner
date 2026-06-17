@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — AtimiScanner</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:      #1a1a1e;
+      --ink-dim:  #555;
+      --border:   #e2e2e7;
+      --bg:       #f9f9fb;
+      --accent:   #2563eb;
+      --green:    #16a34a;
+      --surface:  #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink:     #f0f0f5;
+        --ink-dim: #9a9aaa;
+        --border:  #2c2c36;
+        --bg:      #111116;
+        --surface: #1c1c24;
+      }
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 28px;
+      margin-bottom: 36px;
+    }
+
+    .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: var(--ink-dim);
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -.3px;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--ink-dim);
+    }
+
+    /* Summary banner */
+    .summary-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green);
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 40px;
+    }
+    .summary-box h2 {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--green);
+    }
+    .summary-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .summary-box li {
+      font-size: 15px;
+      padding-left: 22px;
+      position: relative;
+    }
+    .summary-box li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      padding-top: 4px;
+    }
+
+    p {
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+    p:last-child { margin-bottom: 0; }
+
+    ul.body-list {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+    ul.body-list li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 40px 0;
+    }
+
+    footer {
+      font-size: 13px;
+      color: var(--ink-dim);
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 22px; }
+      .page { padding: 32px 18px 60px; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="app-name">AtimiScanner</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      Effective date: <strong>June 17, 2026</strong> &nbsp;·&nbsp;
+      Last updated: <strong>June 17, 2026</strong>
+    </p>
+  </header>
+
+  <!-- Plain-language summary up top -->
+  <div class="summary-box">
+    <h2>The short version</h2>
+    <ul>
+      <li>AtimiScanner collects no personal data.</li>
+      <li>Camera frames are processed on your device and never transmitted anywhere.</li>
+      <li>There is no account, no login, and no user profile.</li>
+      <li>There is no analytics SDK, no advertising SDK, and no crash reporter.</li>
+      <li>AtimiScanner makes zero network requests — by design and by code.</li>
+    </ul>
+  </div>
+
+  <section id="who-we-are">
+    <h2>Who we are</h2>
+    <p>
+      AtimiScanner is a document and QR code scanner for iPhone, built and published
+      by Jeff Griffith. Contact:
+      <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a>.
+    </p>
+  </section>
+
+  <section id="what-we-collect">
+    <h2>What data we collect</h2>
+    <p><strong>None.</strong></p>
+    <p>
+      AtimiScanner does not collect, store, transmit, or share any personal data.
+      It does not create a user account, assign a device identifier, or maintain
+      any persistent record that identifies you.
+    </p>
+  </section>
+
+  <section id="camera">
+    <h2>Camera access</h2>
+    <p>
+      AtimiScanner requests access to your iPhone's camera solely to display a
+      live viewfinder for scanning documents and QR codes. Camera frames are
+      processed entirely on your device using on-device JavaScript running inside
+      a WebKit web view. No camera frame, captured image, or scanned document
+      is transmitted to any server, cloud service, or third party.
+    </p>
+    <p>
+      Images are stored in memory only for the duration of your active scan session.
+      When you close the app, all in-memory data is discarded. AtimiScanner never
+      writes to your photo library unless you explicitly use the iOS share sheet
+      to save a file there yourself.
+    </p>
+  </section>
+
+  <section id="qr-codes">
+    <h2>QR code and barcode scanning</h2>
+    <p>
+      When you scan a QR code, the decoded content (a URL, Wi-Fi credential,
+      contact card, calendar event, or plain text) is displayed on screen and
+      used to populate an action sheet. This content is never logged, stored
+      beyond the current session, or sent anywhere.
+    </p>
+    <p>
+      If you choose to <em>open a URL in Safari</em>, that action is handled by
+      iOS and is subject to Apple's own privacy practices. AtimiScanner itself
+      makes no network request in connection with QR results.
+    </p>
+  </section>
+
+  <section id="no-network">
+    <h2>Network requests</h2>
+    <p>
+      AtimiScanner is engineered to make zero network requests. The app enforces a
+      strict Content Security Policy (CSP) inside the web view that explicitly
+      blocks <code>connect-src</code>, preventing all outbound HTTP, WebSocket,
+      and fetch connections. The Swift host layer contains no
+      <code>URLSession</code> or <code>URLRequest</code> calls.
+    </p>
+    <p>
+      This is verifiable: AtimiScanner's source code is open to inspection and
+      the network prohibition is enforced at runtime by the browser engine, not
+      merely by policy.
+    </p>
+  </section>
+
+  <section id="third-parties">
+    <h2>Third-party SDKs and services</h2>
+    <p>
+      AtimiScanner contains no third-party code of any kind. It uses only Apple's
+      built-in frameworks:
+    </p>
+    <ul class="body-list">
+      <li><strong>WebKit</strong> — hosts the scanner UI inside a WKWebView</li>
+      <li><strong>UIKit</strong> — provides the native iOS app shell and share sheet</li>
+    </ul>
+    <p>
+      There is no analytics library (no Firebase, no Mixpanel, no Amplitude).
+      There is no advertising SDK (no AdMob, no Meta Audience Network).
+      There is no crash-reporting SDK (no Crashlytics, no Sentry).
+      Apple's built-in crash logging via iOS may record anonymized crash data
+      if you have opted in to sharing diagnostics with Apple — this is Apple's
+      system, controlled in iOS Settings → Privacy &amp; Security → Analytics &amp;
+      Improvements, and is outside AtimiScanner's scope entirely.
+    </p>
+  </section>
+
+  <section id="pdf-export">
+    <h2>PDF export and sharing</h2>
+    <p>
+      When you tap <em>Export PDF</em>, a PDF is assembled on your device from
+      your scanned images using a JavaScript-based PDF writer. The resulting
+      file is written to a temporary location in your device's local storage
+      and offered to you via the iOS share sheet.
+    </p>
+    <p>
+      AtimiScanner does not retain a copy of exported PDFs after the share
+      sheet is dismissed. Temporary files are stored in <code>NSTemporaryDirectory()</code>
+      and are cleared by iOS at its discretion.
+    </p>
+    <p>
+      Where a PDF ends up after you share it (Files, Mail, AirDrop, a third-party
+      app) is governed by that destination's own privacy practices. AtimiScanner
+      has no visibility into or control over the destination.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2>Children's privacy</h2>
+    <p>
+      AtimiScanner does not collect data from anyone, including children under
+      the age of 13. The app is rated 4+ on the App Store.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, the updated version will be posted at this URL with
+      a revised <em>Last updated</em> date. Because AtimiScanner collects no data,
+      we do not need to notify you of changes — but we will keep this page current
+      in the interest of transparency.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or AtimiScanner's privacy practices can be
+      sent to <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a>.
+    </p>
+    <p>
+      Bug reports and feature requests:
+      <a href="https://github.com/grifjef/atimiscanner/issues">github.com/grifjef/atimiscanner/issues</a>.
+    </p>
+  </section>
+
+  <hr>
+
+  <footer>
+    <p>
+      AtimiScanner · Privacy Policy · Effective June 17, 2026<br>
+      <a href="mailto:grif.jef@gmail.com">grif.jef@gmail.com</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
